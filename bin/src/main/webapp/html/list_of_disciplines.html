@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список дисциплин</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/list_of_disciplines.css">
+</head>
+
+<body>
+   
+   
+   
+   <div class="container">
+        <div class="row">
+            <div class="col-lg-12">   
+                        <h1>Система управления студентами и их успеваемостью</h1>      
+            </div>
+        </div>
+    </div>
+   
+   
+   
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-12">
+               <div class="display-flex padding-top-10">
+                   <div class="column-20">
+                       <a class="a-na-glavnuu" href="/JSPProject_warindex.html">На главную</a>
+                   </div>
+                   <div class="main-title-page">
+                       Список дисциплин
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+    
+   
+   
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-6">
+               <div id="disciplina-list" class="display-flex start for-mobile-display-block">
+                   <div class="column-20"></div>
+                   <div>
+                       <table class="table-main-info table-student-progress">
+                           <tbody>
+                               <tr>
+                                   <th></th>
+                                   <th>Наименование дисциплины</th>
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="2"></td>
+                                   <td>Высшая математика</td>
+
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="3"></td>
+                                   <td>История науки и Техники</td>
+
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="4"></td>
+                                   <td>Политология</td>
+
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="12"></td>
+                                   <td>Информатика</td>
+
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="13"></td>
+                                   <td>Теория Алгоритмизации</td>
+
+                               </tr>
+
+                           </tbody>
+                       </table>
+                   </div>
+                   <div class="col-lg-6">
+                       <div class="div-student-progress-select-semestr">
+                           <div class="mobile-div">
+                               <div>
+                                   <form action="create_discipline.html" method="get">
+                                       <input class="big-big-button" type="submit" value="Создать дисциплину...">
+                                   </form>
+                               </div>
+                               <div>
+                                   <form action="modifying_discipline.html" method="get">
+                                       <input onclick="modifiDisciplines()" type="submit" class="big-big-button" value="Модифицировать выбранную дисциплину...">
+                                   </form>
+                               </div>
+
+                               <input type="hidden" name="isDeleteDis" id="isDeleteDis">
+
+                               <div><input class="big-big-button" type="submit" value="Удалить выбранную дисциплину..." onclick="deleteDisciplines()"></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+    
+</body>
+</html>

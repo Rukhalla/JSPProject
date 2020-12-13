@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список студентов</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/students_list.css">
+</head>
+<body>
+   
+   
+   
+   <div class="container">
+        <div class="row">
+            <div class="col-lg-12">   
+                        <h1>Система управления студентами и их успеваемостью</h1>      
+            </div>
+        </div>
+    </div>
+   
+   
+   
+   
+   <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+   <div class="display-flex start padding-top-10">
+    <div class="column-20">
+        <a class="a-na-glavnuu" href="index.html">На главную</a>
+    </div>
+   
+        <div class="student-list-div">
+        <div class="display-flex mobile-div">
+            <div>
+            <form method="get" action="student_progress.html">
+            <input class="black-button big-button" type="submit" value="Просмотреть успеваемость выбранных студентов" onclick="viewStudentPrograss()">
+                </form>
+            </div>
+            <div>
+
+                <form method="get" action="student_creating.html">
+                    <input type="submit" class="black-button small-button" value="Создать студента">
+                </form>
+
+            </div>
+        </div>
+
+        <div class="display-flex mobile-div">
+            <div>
+            <form action="student_modifying.html" method="get">
+            <input type="submit" class="black-button big-button" value="Модифицировать выбранного студента" onclick="studentModify()">
+                </form>
+            </div>
+            <div><input type="submit" class="black-button small-button" value="Удалить выбранных студентов" onclick="deleteStudents()"></div>
+        </div>
+
+    </div>
+</div>
+            </div>
+       </div>
+    </div>
+    
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="display-flex start">
+
+                    <div class="student-list-page">
+                        Список студентов
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-12">
+               <div class="display-flex start">
+                   <div class="column-10"></div>
+                   <div class="column-100">
+                       <table class="table-main-info">
+                           <tbody>
+                               <tr>
+                                   <th></th>
+                                   <th>Фамилия</th>
+                                   <th>Имя</th>
+                                   <th>Группа</th>
+                                   <th>Дата поступления</th>
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="1"></td>
+                                   <td>Сидоров</td>
+                                   <td>Сидор</td>
+                                   <td>КТ-21</td>
+                                   <td>2011-09-01</td>
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="6"></td>
+                                   <td>Петров</td>
+                                   <td>Пётр</td>
+                                   <td>КТ-21</td>
+                                   <td>2011-09-01</td>
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="7"></td>
+                                   <td>Иванов</td>
+                                   <td>Иван</td>
+                                   <td>КТ-21</td>
+                                   <td>2011-09-01</td>
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="8"></td>
+                                   <td>Макаревич</td>
+                                   <td>Андрей</td>
+                                   <td>КТ-21</td>
+                                   <td>2011-09-01</td>
+                               </tr>
+
+                               <tr>
+                                   <td><input type="checkbox" id="9"></td>
+                                   <td>Бельгиец</td>
+                                   <td>Василий</td>
+                                   <td>КТ-21</td>
+                                   <td>2011-09-01</td>
+                               </tr>
+
+
+
+                           </tbody>
+                       </table>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+    
+</body>
+</html>

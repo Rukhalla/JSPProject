@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Семестры</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/term_list.css">
+</head>
+<body>
+   
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-12">
+               <h1>Система управления студентами и их успеваемостью</h1>
+           </div>
+       </div>
+   </div>
+
+
+
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-2">
+               <div class="display-flex start padding-top-10">
+                   <div class="column-20">
+                       <a class="a-na-glavnuu" href="index.html">На главную</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-10">
+               <div class="div-student-progress-select-semestr">
+                   <div class="display-flex start">
+                       <form action="/term-list" method="post">
+                           <label>Выбрать семестр</label>
+                           <div class="select">
+                               <select name="selectedTerm">
+
+                                   <option selected="" value="1">Семестр 1</option>
+
+                                   <option value="2">Семестр 2</option>
+
+                                   <option value="3">Семестр 3</option>
+
+                                   <option value="4">Семестр 4</option>
+
+                                   <option value="5">Семестр 5</option>
+
+                               </select>
+                           </div>
+
+                           <input class="button" type="submit" value="Выбрать">
+                       </form>
+                   </div>
+                   <label>Длительность семестра: 24 недели</label>
+               </div>
+           </div>
+       </div>
+   </div>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="display-flex start" id="div-title-page">
+                  <div class="column-20">
+                  </div>
+                  <div class="main-title-page">
+                      Список дисциплин семестра
+                  </div>
+              </div>
+
+
+
+
+              <div id="disciplina-list" class="display-flex start for-mobile-display-block">
+                  <div class="column-20"></div>
+                  <div>
+                      <table class="table-main-info table-student-progress">
+                          <tbody>
+                              <tr>
+                                  <th>Наименование дисциплины</th>
+                              </tr>
+
+                              <tr>
+                                  <td>Высшая математика</td>
+                              </tr>
+
+                              <tr>
+                                  <td>История науки и Техники</td>
+                              </tr>
+
+                              <tr>
+                                  <td>Политология</td>
+                              </tr>
+
+                              <tr>
+                                  <td>Информатика</td>
+                              </tr>
+
+                              <tr>
+                                  <td>Теория Алгоритмизации</td>
+                              </tr>
+
+                          </tbody>
+                      </table>
+                  </div>
+
+                  <div class="div-student-progress-select-semestr">
+                      <div class=" mobile-div">
+                          <form action="term_creating.html" method="get">
+                              <div><input class="big-big-button" type="submit" value="Создать семестр..."></div>
+                          </form>
+                          <form action="term_modifying.html" method="get"> <input type="hidden" value="1" name="idTermModify">
+                              <div><input type="submit" class="big-big-button" value="Модифицировать выбранный семестр..."></div>
+                          </form>
+                          <form action="/term-list-delete" method="post"><input type="hidden" value="1" name="idTermDelete">
+                              <div><input class="big-big-button" type="submit" value="Удалить выбранный семестр..."></div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+   
+    
+</body>
+</html>

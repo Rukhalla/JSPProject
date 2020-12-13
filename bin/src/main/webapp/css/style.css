@@ -1,0 +1,192 @@
+
+body {
+    min-width: 320px;
+    font-size: 14px;
+    color: #626262;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient( rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.9) ),url(../img/slider_background2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: top;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Делаем все картинки адаптивными*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #ffb606;
+    transition: all .3s;
+}
+
+/*Цвет заднего фона у блока навигации*/
+header .navbar-light {
+    background-color: #fff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/*Логотип*/
+header .navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/*Кнопки навигации*/
+header .nav-item {
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+header .nav-item a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #ffb606;
+    height: 1px;
+    transform: scale(0);
+    transition: all .3s;
+}
+/*Полоска разжимается пд навигационной кнопкой*/
+header .nav-item a:hover::after {  
+    transform: scale(1);
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background-color: #ffb606;
+    color: #000;
+    border-bottom-color: black;
+}
+
+/*********************************
+ Заголовок
+*********************************/
+
+h1 {
+    
+    text-align: center;
+    margin-top: 200px;
+}
+
+.headings h1 {
+    font-size: 68px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.headings h1 span
+{
+	background: #ffb606;
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+/*********************************
+ Три больших нижних кнопки
+*********************************/
+   
+.card{
+    background-color:#1a1a1a;
+    margin-top: 130px;
+    height: 150px;
+    
+}
+
+.card:hover{
+    background-color: #ffb606;
+    transition: all 0.2s;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-body img{
+    width: 60px;
+    height: 60px;
+}
+
+h5, h6{
+    color: white;
+    line-height: 1.5rem;
+}
+
+h5{
+    font-weight: 900;
+}
+
+h6{
+    font-size: 12px;
+}
+
+.logo-text{
+    margin-left: 20px;
+}
+
+.decor:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*********************************
+ Адаптивность
+*********************************/
+
+/*320 - 480 px*/
+@media screen and (max-width: 480px) { 
+    .header_content{
+       flex-direction: column;           
+    }
+    .card{
+        flex-direction: column;
+        margin: 15px;
+    }
+    
+    .headings h1 {
+    font-size: 45px;	
+    }
+    .navbar{
+        margin-right: 15px;
+    }
+}
+
+
+
+
+
